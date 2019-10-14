@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const Layout = () => {
+const Layout = (props) => {
     return (
-        <Navbar />
+        <>
+            <Navbar />
+            {props.children}
+        </>
     )
 }
 
