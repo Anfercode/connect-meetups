@@ -6,6 +6,7 @@ const Layout = (props) => {
         <>
             <Navbar />
             {props.children}
+            <p>este es el footer</p>
         </>
     )
 }
