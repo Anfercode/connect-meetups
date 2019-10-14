@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Logo from '../assets/images/logo.png';
+import '../assets/styles/components/navbar.sass'
 
 
 const Navbar = () => {
     return (
-        <nav>
-            <img src={Logo} alt="" />
-            <div>
+        <nav className="navbar" >
+            <img src={Logo} alt="" className="navbar-logo" />
+            <div className='navbar-buttons' >
                 <Link to="/create">
                     <p>Cre tu propia comunidad</p>
                 </Link>
